@@ -4,9 +4,9 @@
 This project aims to showcase my professional achievements, skills, and projects in an interactive and visually appealing online portfolio.
 
 ## Technologies Used
-- **HTML**: To structure the content of the portfolio.
-- **CSS**: To design and style the website for an engaging user experience.
-- **JavaScript**: To add interactivity and enhance functionality.
+- **HTML**: To structure the content of the portfolio
+- **CSS**: To design and style the website for an engaging user experience
+- **JavaScript**: To add interactivity and enhance functionality
 
 ## Features
 - A sleek homepage introducing my professional profile.
