@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/skins/color-1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- =========== Style Switcher ================= -->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
 </head>
 
 <body>
@@ -24,22 +31,22 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#"><i class="fa fa-user"></i>About</a></li>
-                <li><a href="#"><i class="fa fa-list"></i>Services</a></li>
-                <li><a href="#"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-                <li><a href="#"><i class="fa fa-globe"></i>Blog</a></li>
-                <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#blog"><i class="fa fa-globe"></i>Blog</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
         </div>
         <!-- =========== Aside End ============= -->
         <!-- =========== Main Content Start ============= -->
         <div class="main-content">
             <!-- =========== Home Section Start ============= -->
-            <section class="home section hidden">
+            <section class="home section" id="home">
                 <div class="container">
                     <div class="row">
-                        <div class="home-info padd-15">
+                        <div class="home-info buttons  padd-15">
                             <h3 class="hello">Hello, my name is <span class="name">Jean Rodrigue Bitsinda Ikuzwe</span></h3>
                             <h3 class="my-profession">I am a <span class="typing">Machine Learning Engineer</span></h3>
                             <p>I am a Machine Learning Engineer with a robust background in mathematics and statistics, currently pursuing an ECE Master's at Carnegie Mellon University Africa. With over a year of experience in computer vision and data-driven
@@ -47,14 +54,14 @@
                             <a href="#contact" class="btn hire-me">Hire Me</a>
                         </div>
                         <div class="home-img padd-15">
-                            <img src="images/Profile_pics1.png" alt="">
+                            <img src="images/Profile_pics.png" alt="">
                         </div>
                     </div>
                 </div>
             </section>
             <!-- =========== Home Section End ============= -->
             <!-- =========== About Section Start ============= -->
-            <section class="about section">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -102,7 +109,9 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="#" class="btn">Download CV</a>
+                                            <!-- <a href="#" class="btn">Download CV</a> -->
+                                            <a href="src\docs\CV_JeanRodrigueBitsindaIkuzwe.pdf" download="CV_Jean_Rodrigue_Bitsinda_Ikuzwe.pdf" class="btn">Download CV</a>
+
                                             <a href="#contact" class="btn hire-me">Hire Me</a>
                                         </div>
                                     </div>
@@ -212,41 +221,642 @@
                                                     <h3 class="timeline-date">
                                                         <i class="fa fa-calendar"></i> 2023 - 2025
                                                     </h3>
-                                                    <h4 class="timeline-title"> Master in Electrical and Computer Engineering</h4>
-                                                    <p class="timeline-title">
-                                                        I have learnt a lot of things from this masters including Machine Learning.
+                                                    <h4 class="timeline-title">M.Sc. in Electrical and Computer Engineering</h4>
+                                                    <p class="timeline-text">
+                                                        At Carnegie Mellon University Africa, I embarked on a transformative journey through a dynamic curriculum that fused Artificial Intelligence, Machine Learning Engineering, Software Development, and Data Science. Immersed in cutting-edge research, I engineered
+                                                        data-driven solutions and innovative projects that push the boundaries of AI/ML and software integration.
+                                                    </p>
+                                                </div>
+                                                <!-- ========== Timeline item ============ -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2021 - 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">M.Sc. in Condensed Matter Physics</h4>
+                                                    <p class="timeline-text">
+                                                        At ICTP-East African Institute for Fundamental Research, I delved deep into the intricate world of matter, cultivating a research-driven mindset that now fuels my ventures in AI and machine learning. This academic chapter honed my analytical prowess,
+                                                        laying a strong foundation for crafting innovative, data-centric solutions.
+                                                    </p>
+                                                </div>
+                                                <!-- ========== Timeline item ============ -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2016 - 2020
+                                                    </h3>
+                                                    <h4 class="timeline-title">B.Sc. in Physics</h4>
+                                                    <p class="timeline-text">
+                                                        At the University of Rwanda, I built a solid foundation in scientific inquiry and critical thinking. This formative journey sparked my relentless curiosity and continues to inspire my fusion of theoretical physics with advanced AI and machine learning
+                                                        techniques, driving me to create elegant and impactful solutions.
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="experience padd-15">
+                                    <h3 class="title">Experience</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- ========== Timeline item: Graduate Research Assistant ============ -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Sep 2024 – Dec 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">Graduate Research Assistant – CMU Africa</h4>
+                                                    <p class="timeline-text">
+                                                        Led a dynamic student team on an AI-driven project for 3D prosthetic reconstruction. Spearheaded model optimization and experimental design while co-authoring an award-winning paper that redefined the intersection of AI, computer vision, and biomedical
+                                                        innovation.
+                                                    </p>
+                                                </div>
+                                                <!-- ========== Timeline item: Graduate Summer Research Intern ============ -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Jun 2024 – Aug 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">Graduate Summer Research Intern – CMU Africa</h4>
+                                                    <p class="timeline-text">
+                                                        Optimized computer vision and AI models for precise 3D reconstructions in prosthetic applications. Integrated advanced 3D printing techniques with data-driven strategies to push the envelope of digital prosthetics.
+                                                    </p>
+                                                </div>
+                                                <!-- ========== Timeline item: Co-Founder & Representative ============ -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Aug 2024 – Present
+                                                    </h3>
+                                                    <h4 class="timeline-title">Co-Founder & Representative – Rwanda Physics Olympiad</h4>
+                                                    <p class="timeline-text">
+                                                        Spearheading Rwanda’s inaugural Physics Olympiad, I organize weekly training sessions, forge strategic partnerships, and drive STEM outreach initiatives—empowering young minds and fostering a culture of scientific excellence.
+                                                    </p>
+                                                </div>
+                                                <!-- ========== Timeline item: Graduate Researcher ============ -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Jan 2023 – Jul 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">Graduate Researcher – ICTP-East African Institute for Fundamental Research</h4>
+                                                    <p class="timeline-text">
+                                                        Pioneered a machine learning approach to construct Sum-of-Product Potential Energy Surfaces for quantum dynamics. By harnessing neural networks and advanced regression techniques, I bolstered scalable molecular modeling and enhanced quantum simulation
+                                                        accuracy.
+                                                    </p>
+                                                </div>
+                                                <!-- ========== Timeline item: High School Substitute Teacher ============ -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Feb 2021 – May 2021
+                                                    </h3>
+                                                    <h4 class="timeline-title">High School Substitute Teacher – G.S. Ngarama, Rulindo</h4>
+                                                    <p class="timeline-text">
+                                                        Taught ICT, Math, and Physics at G.S. Ngarama in Rulindo, Northern Province, Rwanda, earning recognition as an outstanding teacher through innovative lesson plans and a commitment to elevating student engagement.
+                                                    </p>
+                                                </div>
+                                                <!-- ========== Timeline item: Data Entry Clerk ============ -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Jun 2021 – Dec 2021
+                                                    </h3>
+                                                    <h4 class="timeline-title">Data Entry Clerk – Tare Health Center</h4>
+                                                    <p class="timeline-text">
+                                                        Managed and organized over 5,000 daily records at Tare Health Center, Northern Province, Rwanda, improving data accuracy and streamlining operational workflows to support critical health services.
+                                                    </p>
+                                                </div>
+                                                <!-- ========== Timeline item: Youth Volunteer (Research Commissioner) ============ -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2018 – 2021
+                                                    </h3>
+                                                    <h4 class="timeline-title">Research Commissioner – Rwanda Youth Volunteers in Community Policying</h4>
+                                                    <p class="timeline-text">
+                                                        Led COVID-19 research initiatives and community health interventions, impacting over 23,000 community members. Developed and implemented projects to enhance public health and sanitation, underscoring my commitment to using data and research for social
+                                                        good.
                                                     </p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
-                            <div class="experience padd-15">
-                                <h3 class="title">Experience</h3>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- =========== About Section End ============= -->
+            <!-- ---------------------------------------------------------------- -->
+            <!--===========Services Section Start============= -->
+            <section class="service section" id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Services</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- ======== Service item Start ========= -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-mobile-alt"></i>
+                                </div>
+                                <h4>ML Engineering</h4>
+                                <p>Transforming data into actionable insights through advanced machine learning techniques and algorithms.</p>
+                                <a href="#" class="btn">Read More</a>
+                            </div>
+
+                        </div>
+                        <!--========Service item End========= -->
+                        <!-- ======== Service item Start ========= -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-laptop-code"></i>
+                                </div>
+                                <h4>AI Engineering</h4>
+                                <p>Transforming data into actionable insights through advanced machine learning techniques and algorithms.</p>
+                                <a href="#" class="btn">Read More</a>
+                            </div>
+
+                        </div>
+                        <!--========Service item End========= -->
+                        <!-- ======== Service item Start ========= -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-palette"></i>
+                                </div>
+                                <h4>Beat Makers</h4>
+                                <p>Transforming data into actionable insights through advanced machine learning techniques and algorithms.</p>
+                                <a href="#" class="btn">Read More</a>
+                            </div>
+
+                        </div>
+                        <!--========Service item End========= -->
+                        <!-- ======== Service item Start ========= -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <h4>Data Analysis</h4>
+                                <p>Transforming data into actionable insights through advanced machine learning techniques and algorithms.</p>
+                                <a href="#" class="btn">Read More</a>
+                            </div>
+
+                        </div>
+                        <!--========Service item End========= -->
+
+                        <!-- ======== Service item Start ========= -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <h4>Data Science</h4>
+                                <p>Transforming data into actionable insights through advanced machine learning techniques and algorithms.</p>
+                                <a href="#" class="btn">Read More</a>
+                            </div>
+
+                        </div>
+                        <!--========Service item End========= -->
+                        <!-- ======== Service item Start ========= -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-bullhorn"></i>
+                                </div>
+                                <h4>Web</h4>
+                                <p>Transforming data into actionable insights through advanced machine learning techniques and algorithms.</p>
+                                <a href="#" class="btn">Read More</a>
+                            </div>
+
+                        </div>
+                        <!--========Service item End========= -->
+                    </div>
+                </div>
+            </section>
+            <!--===========Services Section End============= -->
+            <!-- ---------------------------------------------------------------- -->
+            <!-- =========== Portfolio Section Start ============= -->
+            <!--===========Portfolio Section Start============= -->
+            <section class="portfolio section" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Portfolio</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h3>My Recent Work</h3>
+                        </div>
+                    </div>
+                    <div class="row work-list">
+                        <!-- Portfolio item 1 -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/portfolio-1.jpg" alt="Project Title 1 Thumbnail">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h3>Project Title 1</h3>
+                                    <p>Short summary of Project 1…</p>
+                                    <button class="btn read-more" data-modal="modal-portfolio-1"><i class="fas fa-external-link-alt"></i> Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item 2 -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/portfolio-2.jpg" alt="Project Title 2 Thumbnail">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h3>Project Title 2</h3>
+                                    <p>Short summary of Project 2…</p>
+                                    <button class="btn read-more" data-modal="modal-portfolio-2"><i class="fas fa-external-link-alt"></i> Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item 3 -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/portfolio-3.jpg" alt="Project Title 3 Thumbnail">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h3>Project Title 3</h3>
+                                    <p>Short summary of Project 3…</p>
+                                    <button class="btn read-more" data-modal="modal-portfolio-3"><i class="fas fa-external-link-alt"></i> Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item 4 -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/portfolio-4.jpg" alt="Project Title 4 Thumbnail">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h3>Project Title 4</h3>
+                                    <p>Short summary of Project 4…</p>
+                                    <button class="btn read-more" data-modal="modal-portfolio-4"><i class="fas fa-external-link-alt"></i> Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item 5 -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/portfolio-5.jpg" alt="Project Title 5 Thumbnail">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h3>Project Title 5</h3>
+                                    <p>Short summary of Project 5…</p>
+                                    <button class="btn read-more" data-modal="modal-portfolio-5"><i class="fas fa-external-link-alt"></i> Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item 6 -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/portfolio-6.jpg" alt="Project Title 6 Thumbnail">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h3>Project Title 6</h3>
+                                    <p>Short summary of Project 6…</p>
+                                    <button class="btn read-more" data-modal="modal-portfolio-6"><i class="fas fa-external-link-alt"></i> Read More</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
+            <!--===========Portfolio Section End============= -->
+
+            <!-- Modals for each Portfolio Item -->
+            <!-- Modal Portfolio Item 1 -->
+            <div id="modal-portfolio-1" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="modal-portfolio-1">&times;</span>
+                    <h3>Project Title 1 - Detailed Overview</h3>
+                    <p>
+                        Detailed description of Project 1. Explain the technology used, challenges overcome, and results achieved. Describe the machine learning techniques, tools, and innovative approaches implemented.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Modal Portfolio Item 2 -->
+            <div id="modal-portfolio-2" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="modal-portfolio-2">&times;</span>
+                    <h3>Project Title 2 - Detailed Overview</h3>
+                    <p>
+                        Detailed description of Project 2. Include project objectives, the data science strategies employed, and the outcome that makes this project impactful.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Modal Portfolio Item 3 -->
+            <div id="modal-portfolio-3" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="modal-portfolio-3">&times;</span>
+                    <h3>Project Title 3 - Detailed Overview</h3>
+                    <p>
+                        Detailed description of Project 3. Discuss the methodologies, key challenges, and the innovation behind the project.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Modal Portfolio Item 4 -->
+            <div id="modal-portfolio-4" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="modal-portfolio-4">&times;</span>
+                    <h3>Project Title 4 - Detailed Overview</h3>
+                    <p>
+                        Detailed description of Project 4. Include technical details and the results that demonstrate its success.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Modal Portfolio Item 5 -->
+            <div id="modal-portfolio-5" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="modal-portfolio-5">&times;</span>
+                    <h3>Project Title 5 - Detailed Overview</h3>
+                    <p>
+                        Detailed description of Project 5. Provide insights into the project’s design, execution, and impact.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Modal Portfolio Item 6 -->
+            <div id="modal-portfolio-6" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="modal-portfolio-6">&times;</span>
+                    <h3>Project Title 6 - Detailed Overview</h3>
+                    <p>
+                        Detailed description of Project 6. Describe how this project integrates machine learning with innovative data solutions.
+                    </p>
+                </div>
+            </div>
+            <!-- Modals for each Portfolio Item End -->
+            <!-- =========== Portfolio Section End ============= -->
+            <!-- ---------------------------------------------------------------- -->
+            <!-- =========================================================================================== -->
+            <!-- =========================================================================================== -->
+            <!-- =========== Blog Section Start ============= -->
+            <section class="portfolio section" id="blog">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>My Blog</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="blog-heading padd-15">
+                            <h3>Insights & Innovations</h3>
+                            <p>Thoughts on Machine Learning, AI, and the Future of Technology</p>
+                        </div>
+                    </div>
+                    <div class="row work-list">
+                        <!-- Blog Post 1 -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/AI4Social.png" alt="AI for Social Good Thumbnail">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h3>AI for Social Good: Empowering Communities</h3>
+                                    <p>Discover how AI is transforming data into solutions that uplift communities and drive sustainable change.</p>
+
+                                    <button class="btn read-more" data-link="blog/blog1.html"><i class="fas fa-external-link-alt"></i> Read More</button>
+                                    <!-- <a class="btn read-more" data-link="blog/blog1.html"><i class="fas fa-external-link-alt"></i> Read More</a> -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Blog Post 2 -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/edgeai.jpg" alt="Edge AI Thumbnail">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h3>Harnessing Edge AI for Sustainability</h3>
+                                    <p>A step-by-step exploration into how edge computing enables greener, efficient solutions in challenging environments.</p>
+                                    <button class="btn read-more" data-link="blog/blog2.html"><i class="fas fa-external-link-alt"></i> Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Blog Post 3 -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/phy2ai.jpg" alt="From Physics to ML Thumbnail">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h3>From Physics to Machine Learning: Bridging Two Worlds</h3>
+                                    <p>Learn how a foundation in physics enhances machine learning innovation in solving real-world challenges.</p>
+                                    <button class="btn read-more" data-link="blog/blog3.html"><i class="fas fa-external-link-alt"></i> Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- =========== Blog Section End ============= -->
+            <!-- =========================================================================================== -->
+            <!-- =========================================================================================== -->
+
+            <!--===========Contact Section Start============= -->
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15">Have You Any Questions?</h3>
+                    <h4 class="contact-subtitle padd-15">I'M AT YOUR SERVICES</h4>
+                    <div class="row">
+                        <!-- ========== Contact info item Start ========== -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <h4>Call Us On</h4>
+                            <p>+250 785391669</p>
+                        </div>
+                        <!-- ========== Contact info item End ========== -->
+                        <!-- ========== Contact info item Start ========== -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                            <h4>Office</h4>
+                            <p>Kigali, Rwanda</p>
+                        </div>
+                        <!-- ========== Contact info item End ========== -->
+                        <!-- ========== Contact info item Start ========== -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <h4>Email</h4>
+                            <p>jbitsind@gmail.com</p>
+                        </div>
+                        <!-- ========== Contact info item End ========== -->
+                    </div>
+                    <h3 class="contact-title padd-15">CONTACT ME DIRECTLY HERE</h3>
+                    <!-- ============ Contact Form ============== -->
+                    <!-- ============ Contact Form ============== -->
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <!-- Form now has an ID and proper name attributes -->
+                            <form id="contact-form">
+                                <div class="row">
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="user_name" placeholder="Your Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="user_email" placeholder="Your Email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" placeholder="Type your message here" rows="5" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <button type="submit" class="btn">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--===========Contact Section End============= -->
+            <!-- ---------------------------------------------------------------- -->
+
         </div>
-    </div>
-    </section>
-    <!-- =========== About Section End ============= -->
-    <!-- ---------------------------------------------------------------- -->
-    <!--===========Portfolio Section Start============= -->
-    <section id="portifolio">
-        <h1 class="sub-heading">Portfolio</h1>
-        <div></div>
-    </section>
-    <!-- =========== Portfolio Section End ============= -->
-    <!-- ---------------------------------------------------------------- -->
 
     </div>
-    <!-- =========== Main Content End ============= -->
-    </div>
     <!-- =========== Main Container End ============= -->
+    <!-- =========== Style Switcher Start ============= -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas"></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- =========== Style Switcher End ============= -->
+    <!-- =========== Footer Start ============= -->
+    <footer class="footer section">
+        <div class="container">
+            <!-- Branding + social -->
+            <div class="footer-logo">
+                <h2>Tsikuzro</h2>
+                <p>Your tagline or a brief description goes here.</p>
+                <ul class="social-icon">
+                    <li><a href="https://www.facebook.com/jeanrodrigue.bitsindaikuzwe.5" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://x.com/tsikuzro1" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/jrodrigue/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.instagram.com/tsikuzro.jbr/?hl=en#" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a></li>
+
+                </ul>
+            </div>
+
+            <!-- Example link column -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Example newsletter column
+            <div class="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <form>
+                    <input type="email" placeholder="Your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div> -->
+        </div>
+
+        <div class="footer-bottom">
+            <p>Designed by Tsikuzro</p>
+            <p>&copy; 2025 Tsikuzro Portfolio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- =========== Footer End ============= -->
     <!-- =========== JS Files ============= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/style-switcher.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/email.js"></script>
+    <!-- ===== EmailJS SDK and Initialization ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script> -->
+    <script type="text/javascript">
+        // Initialize EmailJS with your Public Key
+        (function() {
+            emailjs.init("K8NKPzrcDuJYdKrB2"); // Replace with your EmailJS Public Key
+        })();
+    </script>
+
+    <!-- Form Submission Script -->
+    <script type="text/javascript">
+        // Attach the event listener to the form with id "contact-form"
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+
+            emailjs.sendForm('service_7z03nir', 'template_cl4kre9', this)
+                .then(function(response) {
+                    alert('Message sent successfully!');
+                }, function(error) {
+                    alert('Failed to send message. Please try again later.');
+                });
+        });
+    </script>
 </body>
+
+</html>
 
 </html>
