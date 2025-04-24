@@ -219,35 +219,42 @@ var typed = new Typed(".typing", {
 });
 
 /*====================== Message Sending (Contact Form) =========================*/
-const contactForm = document.getElementById('contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', async function(e) {
+// Ensure EmailJS is initialized and the form is present before proceeding
+// This is a good practice to avoid errors in case the script runs before the DOM is fully loaded.
+document.addEventListener("DOMContentLoaded", () => {
+    // 1. Initialize EmailJS (replace with your own Public Key)
+    emailjs.init("K8NKPzrcDuJYdKrB2"); // :contentReference[oaicite:0]{index=0}
+
+    // 2. Grab the form and guard against missing element
+    const form = document.getElementById("contact-form");
+    if (!form) return;
+
+    // 3. Attach a single submit handler
+    form.addEventListener("submit", async function(e) {
         e.preventDefault();
+
+        // 4. Disable button to prevent double submits
         const btn = this.querySelector('button[type="submit"]');
         btn.disabled = true;
 
-        const name = document.querySelector('input[name="user_name"]').value;
-        const email = document.querySelector('input[name="user_email"]').value;
-        const subject = document.querySelector('input[name="subject"]').value;
-        const message = document.querySelector('textarea[name="message"]').value;
-
         try {
-            const res = await fetch("http://localhost:3000/send", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ name, email, subject, message })
-            });
-            const text = await res.text();
-            alert(text);
-            // Clear the form upon successful submission
-            this.reset();
+            // 5. Send the form via EmailJS (replace service/template IDs)
+            await emailjs.sendForm(
+                "service_7z03nir", // your Service ID
+                "template_cl4kre9", // your Template ID
+                this // the form element
+            );
+            alert("Message sent successfully!"); // success feedback
+            this.reset(); // clear the form
         } catch (err) {
-            alert("Message failed to send.");
+            console.error("EmailJS error:", err);
+            alert("Failed to send message. Please try again later."); // error feedback
         } finally {
-            btn.disabled = false;
+            btn.disabled = false; // re-enable button
         }
     });
-}
+});
+
 
 /*====================== Read More Button Redirection =========================*/
 // Bind redirection only to buttons that have a valid data-link attribute.
