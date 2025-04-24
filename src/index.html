@@ -109,10 +109,10 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <!-- <a href="#" class="btn">Download CV</a> -->
-                                            <a href="/docs/CV_JeanRodrigueBitsindaIkuzwe.pdf" download="CV_Jean_Rodrigue_Bitsinda_Ikuzwe.pdf" class="btn">Download CV</a>
+                                            <<<<<<< HEAD <!-- <a href="#" class="btn">Download CV</a> -->
+                                                <a href="/docs/CV_JeanRodrigueBitsindaIkuzwe.pdf" download="CV_Jean_Rodrigue_Bitsinda_Ikuzwe.pdf" class="btn">Download CV</a> ======= >>>>>>> a3d13b0daa662f905b9b5a0f053e77016be8c17a
 
-                                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                                                <a href="#contact" class="btn hire-me">Hire Me</a>
                                         </div>
                                     </div>
                                 </div>
@@ -841,20 +841,6 @@
         })();
     </script>
 
-    <!-- Form Submission Script -->
-    <script type="text/javascript">
-        // Attach the event listener to the form with id "contact-form"
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission behavior
-
-            emailjs.sendForm('service_7z03nir', 'template_cl4kre9', this)
-                .then(function(response) {
-                    alert('Message sent successfully!');
-                }, function(error) {
-                    alert('Failed to send message. Please try again later.');
-                });
-        });
-    </script>
 </body>
 
 </html>
