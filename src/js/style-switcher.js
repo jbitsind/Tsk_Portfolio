@@ -1,59 +1,58 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // 1️⃣ Panel open/close
-    // Add event listener to the style switcher toggle button
-    // and toggle the open class on the style switcher panel    
-    const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
-    styleSwitcherToggle.addEventListener("click", () =>
-        document.querySelector(".style-switcher").classList.toggle("open")
-    );
+/* ========================== Style Switcher ========================== */
 
-    // 2️⃣ Close panel on scroll
-    // Add event listener to the window object to close the panel when scrolling
-    // This is useful for mobile devices where the panel might be open by default
-    window.addEventListener("scroll", () => {
-        const panel = document.querySelector(".style-switcher");
-        if (panel.classList.contains("open")) panel.classList.remove("open");
+// Toggle the style switcher panel
+const styleSwitcherToggler = document.querySelector(".style-switcher-toggler");
+styleSwitcherToggler ? .addEventListener("click", () => {
+    document.querySelector(".style-switcher") ? .classList.toggle("open");
+});
+
+// Close style-switcher on scroll
+window.addEventListener("scroll", () => {
+    document.querySelector(".style-switcher.open") ? .classList.remove("open");
+});
+
+/* ========================== Theme Colors ========================== */
+const alternateStyles = document.querySelectorAll('link[rel="alternate stylesheet"][title]');
+const colorButtons = document.querySelectorAll(".style-switcher .colors span");
+
+// Activate the chosen color stylesheet
+function setActiveStyle(color) {
+    alternateStyles.forEach((style) => {
+        style.getAttribute("title") === color ?
+            style.removeAttribute("disabled") :
+            style.setAttribute("disabled", "true");
     });
+    localStorage.setItem("color-theme", color);
+}
 
-    // 3️⃣ Theme color switching
-    // Get all alternate stylesheets and set the active style
-    // based on the selected color
-    const alternateStyles = document.querySelectorAll(
-        'link[rel="alternate stylesheet"][title]'
-    );
-    window.setActiveStyle = (color) => {
-        alternateStyles.forEach((style) => {
-            if (style.getAttribute("title") === color) style.removeAttribute("disabled");
-            else style.setAttribute("disabled", "true");
-        });
-    };
+// Wire up color buttons
+colorButtons.forEach(btn => {
+    const color = btn.getAttribute("title");
+    btn.addEventListener("click", () => setActiveStyle(color));
+});
 
-    // 4️⃣ Light / dark mode toggle
-    // Add event listener to the day-night toggle button
-    // and toggle the dark class on the body element
-    const dayNight = document.querySelector(".day-night");
-    dayNight.addEventListener("click", () => {
-        const icon = dayNight.querySelector("i");
-        document.body.classList.toggle("dark");
-        icon.classList.toggle("fa-moon");
-        icon.classList.toggle("fa-sun");
+/* ========================== Light & Dark Mode ========================== */
+const dayNightToggle = document.querySelector(".day-night");
+dayNightToggle ? .addEventListener("click", () => {
+    const isDark = document.body.classList.toggle("dark");
+    dayNightToggle.querySelector("i")
+        .classList.toggle(isDark ? "fa-sun" : "fa-moon");
+    localStorage.setItem("theme-mode", isDark ? "dark" : "light");
+});
 
-        localStorage.setItem(
-            "theme",
-            document.body.classList.contains("light") ? "light" : "dark"
-        );
-    });
+/* ========================== Restore Settings on Load ========================== */
+window.addEventListener("load", () => {
+    // Restore color theme
+    const savedColor = localStorage.getItem("color-theme");
+    if (savedColor) setActiveStyle(savedColor);
 
-
-    // 5️⃣ Restore saved theme on load
-    // Check if the theme is saved in localStorage and apply it
-
-    window.addEventListener("load", () => {
-        if (localStorage.getItem("theme") === "dark") {
-            document.body.classList.add("dark");
-            document
-                .querySelector(".day-night i")
-                .classList.replace("fa-moon", "fa-sun");
-        }
-    });
+    // Restore light/dark mode
+    const savedMode = localStorage.getItem("theme-mode");
+    if (savedMode === "dark") {
+        document.body.classList.add("dark");
+        dayNightToggle ? .querySelector("i") ? .classList.add("fa-sun");
+    } else {
+        document.body.classList.remove("dark");
+        dayNightToggle ? .querySelector("i") ? .classList.add("fa-moon");
+    }
 });
