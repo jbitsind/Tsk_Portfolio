@@ -11,7 +11,7 @@ window.addEventListener("scroll", () => {
         }
     })
     /* ========================== Theme Colors ========================== */
-const alternateStyles = document.querySelectorAll(".alternate-style");
+const alternateStyles = document.querySelectorAll('link[rel="alternate stylesheet"][title]');
 
 function setActiveStyle(color) {
     alternateStyles.forEach((style) => {
@@ -42,4 +42,4 @@ window.addEventListener("load", () => {
     } else {
         dayNight.querySelector("i").classList.add("fa-moon");
     }
-})
+});
