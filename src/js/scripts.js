@@ -36,9 +36,12 @@ document.querySelectorAll('.about .about-content .education, .about .about-conte
 /*====================== Typing Animation =========================*/
 var typed = new Typed(".typing", {
     strings: ["Machine Learning Engineer", "Data Scientist", "Software Engineer", "Creative Technologist"],
-    typeSpeed: 150,
+
+    typeSpeed: 100,
     backSpeed: 60,
+    backDelay: 1500,
     loop: true
+
 });
 
 /*====================== Message Sending (Contact Form) =========================*/
