@@ -130,3 +130,63 @@ navLinks.forEach(link => {
         }
     });
 });
+
+
+// Animate each bar to its data-percent on scroll
+document.addEventListener("DOMContentLoaded", () => {
+    const bars = document.querySelectorAll(".skill-bar");
+    const options = { threshold: 0.3 };
+    const obs = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const bar = entry.target;
+                const percent = bar.getAttribute("data-percent");
+                bar.querySelector(".skill-fill").style.width = percent + "%";
+                observer.unobserve(bar);
+            }
+        });
+    }, options);
+    bars.forEach(b => obs.observe(b));
+}); /* Hide all category bodies by default */
+.skill - category.category - body {
+    max - height: 0;
+    overflow: hidden;
+    transition: max - height 0.4 s ease;
+}
+
+/* When open, allow body to expand */
+.skill - category.open.category - body {
+    max - height: 500 px; /* big enough to show all skills */
+}
+
+/* Style the header to indicate clickable */
+.category - header {
+        display: flex;
+        justify - content: space - between;
+        align - items: center;
+        cursor: pointer;
+        margin - bottom: 10 px;
+    }
+    .category - header.chevron {
+        transition: transform 0.3 s ease;
+    }
+
+/* Rotate chevron when open */
+.skill - category.open.category - header.chevron {
+    transform: rotate(180 deg);
+}
+
+/* (Include previous skill-bar, skill-fill, etc., styles here) */
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".skill-category .category-header").forEach(header => {
+        header.addEventListener("click", () => {
+            const category = header.parentElement;
+            // Toggle open class
+            category.classList.toggle("open");
+            // Close siblings if you want only one open at a time:
+            document.querySelectorAll(".skill-category").forEach(cat => {
+                if (cat !== category) cat.classList.remove("open");
+            });
+        });
+    });
+});
