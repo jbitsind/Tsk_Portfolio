@@ -1,0 +1,453 @@
+Jean Rodrigue Bitsinda Ikuzwe
+Electrical & Computer Engineering Alumni (MSECE, Class of 2025), CMU-Africa, Kigali, Rwanda
+jbitsind@andrew.cmu.edu — Google Scholar — linkedin.com/in/jrodrigue/ — my portfolio — +250 (785) 391-669
+
+RESEARCH INTERESTS
+
+Core: AI for Social Good
+Technical: Multimodal Learning
+Applications: Assistive Technologies
+
+• Ethical & Explainable AI
+
+• Sustainable AI
+
+• Edge AI & TinyML • 3D Computer Vision
+
+• Environmental Sustainability
+
+• Public Health
+
+EDUCATION
+
+• Master of Science in Electrical and Computer Engineering (MSECE)
+
+Aug 2023–May 2025
+
+Carnegie Mellon University Africa, Kigali, Rwanda
+
+• Master of Science in Condensed Matter Physics(MSCMP)
+
+ICTP-East African Institute of Fundamental Research, Kigali, Rwanda
+
+• Bachelor of Science in Physics
+
+University of Rwanda - College of Science and Technology, Kigali, Rwanda
+
+RESEARCH EXPERIENCE
+
+Graduate Research Assistant
+Carnegie Mellon University Africa, Kigali, Rwanda
+
+• Led a student team on a project focused on AI and CV for 3D prosthetic
+
+reconstruction.
+
+• Managed AI tasks, including model optimization for 3D reconstruction of
+
+prosthetics.
+
+• Co-authored a journal paper in the Journal of Mechanical Design, awarded
+
+and extended from IDETC-CIE ASME Conference 2024.
+
+• Designed experiments, preprocessed data, and evaluated model pipelines.
+• Refined AI techniques for prosthetic applications, enhancing reconstruction
+
+accuracy and usability.
+
+Graduate Summer Research Intern
+Carnegie Mellon University Africa, Kigali, Rwanda
+
+• Optimized CV and AI models for precise 3D reconstructions.
+• Designed experiments and collected data used in 3D reconstructions.
+• Refined AI techniques and integrated them into prosthetic applications.
+• Conducted 3D printing of digital prosthetic limbs, ensuring precision and
+
+functionality.
+
+• Co-authored a research paper accepted and published at IDETC-CIE ASME
+
+Conference 2024.
+
+Volunteer Contributor
+Carnegie Mellon University Africa, Kigali, Rwanda
+
+• Assisted in early-stage data collection and preprocessing for 3D reconstruction.
+• Explored literature to identify state-of-the-art techniques for AI-driven prosthetic
+
+reconstruction.
+
+• Contributed to initial discussions on experimental design and methodology.
+
+Dec 2021–Dec 2023
+
+Sep 2016–Dec 2020
+
+Sep 2024 — Dec 2024
+
+June 2024 — Aug 2024
+
+Jan 2024 — May 2024
+
+Graduate Researcher
+ICTP-East African Institute for Fundamental Research (ICTP-EAIFR), Kigali, Rwanda
+
+Jan 2023 — July 2023
+
+• Developed a machine learning approach for constructing Sum-of-Product (SOP)
+
+Potential Energy Surfaces (PES) in quantum dynamics.
+
+• Applied Neural Networks, Kernel Ridge Regression, and Gaussian Process Regression
+
+to fit PES efficiently.
+
+• Investigated High-Dimensional Model Representation (HDMR) for scalable molecular
+
+modeling.
+
+• Integrated fitted PES models into quantum simulations, enhancing predictions
+
+for molecular interactions.
+
+Jean Rodrigue Bitsinda Ikuzwe
+
+February 19, 2025
+
+PROJECTS
+
+Building a Robust 3D Reconstruction System from Low-Fidelity 2D Images
+Carnegie Mellon University Africa, Kigali, Rwanda
+Skills and Tools: Research Formulation, Scientific Writing, Quantitative Analysis,
+Experimental Design, Technical Documentation, Python, 3D Reconstruction, Team Collaboration,
+Project Management, OpenCV, Blender, Colmap, Rhino.
+
+• Led AI and computer vision tasks for 3D prosthetic reconstruction.
+• Optimized 3D reconstruction models and integrated them into prosthetic applications.
+• Designed experiments, preprocessed data, and evaluated model performance.
+• Conducted 3D printing of digital prosthetic limbs.
+• Co-authored an award-winning journal paper in the Journal of Mechanical Design,
+
+extended from IDETC-CIE ASME Conference 2024.
+
+• Co-authored a conference paper accepted at IDETC-CIE ASME Conference 2024.
+• Currently co-authoring a third research paper on advancements in AI-driven 3D
+
+reconstruction for prosthetics.
+
+Taxi Fare Prediction Application (Cloud Computing Coursework)
+Carnegie Mellon University Africa, Kigali, Rwanda
+Skills and Tools: GCP (AI Platform, App Engine), XGBoost, Flask, Cloud Vision API,
+AutoML, Python, Feature Engineering, Pipeline Integration
+
+• Completed as part of a rigorous cloud computing project replicating real-world
+
+challenges faced by specialists.
+
+• Developed an end-to-end ML pipeline converting speech queries into fare estimates.
+• Engineered features from NYC taxi data and optimized an XGBoost model on GCP.
+• Deployed a Flask API on App Engine for scalable, low-latency predictions.
+• Integrated bonus functionalities including landmark recognition and custom model training.
+
+Jan 2024–Dec 2024
+
+Nov 2024–Dec 2024
+
+Unified Data Aggregation and Visualization Pipeline: Scalable Data
+Integration and Analytics Framework
+Carnegie Mellon University Africa, Kigali, Rwanda
+Skills and Tools: Python, Prefect, Dash, Plotly, MongoDB, PostgreSQL, ETL, Big Data Analytics
+
+Nov 2024–Dec 2024
+
+• Developed an automated ETL pipeline using Prefect to extract, transform,
+
+and load data from diverse sources.
+
+• Integrated data from PostgreSQL and MongoDB into a unified dataset,
+
+ensuring consistency across heterogeneous sources.
+
+• Built an interactive dashboard with Dash and Plotly Express to visualize
+
+key metrics and generate actionable insights.
+
+• Designed the framework for future scalability with the potential to incorporate
+
+advanced tools such as Kafka and Cassandra for real-time processing.
+
+Smart Sorter: Neural Network-Enhanced Recycling Bin
+Carnegie Mellon University Africa, Kigali, Rwanda
+Skills and Tools: Python, PyTorch, ResNet50, Stable Diffusion Model (SDM),
+Transfer Learning, Data Augmentation, Model Optimization,
+Image Classification, Dataset Engineering, Cross-Validation
+
+• Final project for the Introduction to Deep Learning course.
+• Developed a real-time waste classification system using a modified ResNet50.
+• Enhanced dataset diversity with a Stable Diffusion Model:
+
+– Applied diffusion and autoregressive modeling to generate realistic synthetic samples.
+– Trained the SDM to refine data quality for robust classification.
+
+• Achieved 94% classification accuracy via synthetic data integration and transfer learning.
+• Validated performance on the TrashNet dataset using cross-validation and key
+
+evaluation metrics.
+
+Feb 2024–April 2024
+
+Developing a Scalable Machine Learning-Based Potential Energy Surface
+(PES) Fit for Molecules: Sum-of-Product Approach
+ICTP-EAIFR, Kigali, Rwanda
+Skills and Tools: Machine Learning, Deep Learning, Python, TensorFlow, Model Optimization,
+Cluster Computing, Computational Chemistry, Neural Networks, Scientific Computing.
+
+Jan 2023–July 2023
+
+2
+
+Jean Rodrigue Bitsinda Ikuzwe
+
+February 19, 2025
+
+• Developed a machine learning approach to construct Sum-of-Product (SOP) Potential
+
+Energy Surfaces (PES) for quantum dynamics.
+
+• Applied Neural Networks, Kernel Ridge Regression, and Gaussian Process Regression
+
+to efficiently fit PES models.
+
+• Investigated High-Dimensional Model Representation (HDMR) to optimize scalability
+
+for larger molecular systems.
+
+• Integrated the fitted PES models into quantum dynamical simulations, enhancing
+
+accuracy for molecular interaction predictions.
+
+PUBLICATIONS
+
+• Increasing Accessibility of 3D-Printed Customized Prosthetics
+
+Published: November 13, 2024
+
+in Resource-Constrained Communities
+Carnegie Mellon University Africa
+DOI: doi.org/10.1115/DETC2024-143810
+Status: Published in IDETC-CIE ASME 2024 Conference
+Credited as Coauthor
+
+• Accessible Digital Reconstruction and Mechanical Prediction
+
+Published: January 23, 2025
+
+of 3D-Printed Prosthetics
+Carnegie Mellon University Africa
+DOI: doi.org/10.1115/1.4067716
+Status: Published in the *Journal of Mechanical Design*
+Credited as Coauthor
+
+• Optimizing Wireless Sensor Network Topology for Leak Detection
+
+Submitted: February 14, 2025
+
+to Reduce Non-Revenue Water in Resource-Constrained Environments
+Carnegie Mellon University Africa
+Status: Submitted at 2025 European Conference on Networks and Communications &
+6G Summit (EuCNC/6G Summit).
+Credited as Author
+
+• Optimizing Autoscaling of Meshes in Digital Reconstructed Objects
+
+Carnegie Mellon University Africa
+Status: Manuscript under preparation for submission
+Credited as Author
+
+Expected Submission:
+February 26, 2025
+
+SELECTED COURSES
+
+Master’s Courses in Condensed Matter Physics
+
+Master’s Courses in Electrical and Computer
+Engineering
+
+• Mathematical Methods in Physics
+• Numerical Methods I
+• Numerical Programming II
+• Advanced Statistical Mechanics
+• Statistical Physics
+
+• Introduction to Machine Learning for Engineers
+• Introduction to Deep Learning by Prof. Bhiksha Raj
+• Data Structures and Algorithms for Engineers
+• Applied Computer Vision
+• Data Inference and Applied Machine Learning by
+
+Prof. Patrick McSharry
+
+• Data Analytics by Prof. Patrick McSharry
+• Applied Stochastic Processes
+• Advanced Database Systems
+• Cloud Computing by Prof. Majd F. Sakr
+• Geographic Information Systems by Prof. Kristen
+
+Kurland
+
+3
+
+Jean Rodrigue Bitsinda Ikuzwe
+
+February 19, 2025
+
+ACHIEVEMENTS
+
+Best Paper Award, *IDETC-CIE ASME 2024 Conference*
+Co-authored ” Increasing Accessibility of 3D-Printed Customized Prosthetics in
+Resource-Constrained Communities,” selected as the best paper at IDETC-CIE
+ASME 2024 Conference and rewarded to publish it in the *Journal of Mechanical Design*
+
+Washington, DC, USA
+August 25-28, 2024
+
+TWAS Scholarship for Master of Science in Condensed Matter Physics
+Secured the TWAS scholarship for the Master of Science in Condensed Matter Physics
+pursued at ICTP-East African Institute of Fundamental Research
+
+Government of Rwanda Scholarship for Carnegie Mellon University Africa
+Secured a scholarship from the Government of Rwanda to pursue Master of Science in
+Electrical and Computer Engineering at Carnegie Mellon University Africa.
+
+OTHER EXPERIENCES
+
+Co-Founder and Representative
+Rwanda Physics Olympiad (incubated by AIMS Rwanda)
+
+• Conduct weekly sessions training coaches to solve Physics Olympiad-style
+
+questions and strategize organizational growth.
+
+• Secured partnerships with Rwanda Math Olympiad for advisory support
+
+and AIMS Rwanda for STEM outreach collaboration.
+
+• Organizing Rwanda’s first Physics Olympiad (May 2025) and training the
+participants for the 2026 International Physics Olympiad in Colombia.
+
+• Preparing and applying for funding from institutions such as the
+
+Global Talent Fund to support organizational activities.
+
+Kigali, Rwanda
+Dec 2021
+
+Kigali, Rwanda
+Aug 2024
+
+Kigali, Rwanda
+Aug 2024 — Present
+
+Data Entry Clerk
+Tare Health Center
+
+Northern Province, Rwanda
+June 2021 — Dec 2021
+
+• Accurately managed 5,000+ daily records with a 97% data accuracy rate.
+• Updated and organized child development records for 2,000+ children in
+
+the NCDA database.
+
+• Enhanced COVID-19 vaccination data management, achieving a 23%
+
+increase in efficiency and timely reporting.
+
+Research Commissioner
+Rwanda Youth Volunteers in Community Policying(RYVCP), Bushoki Sector
+
+Northern Province, Rwanda
+2018 — 2021
+
+• Led COVID-19 research and interventions, reaching 23,000+ community
+
+members and reducing infection rates by around 25%.
+
+• Identified and developed new community health and sanitation projects.
+• Contributed to building toilet houses, providing sanitation for underserved households.
+
+TEST RESULTS & ACHIEVEMENTS
+
+IELTS (Academic): 6.5 (overall score)
+
+Listening: 7.0 — Reading: 6.0
+Speaking: 6.5 — Writing: 6.0
+Test date: April 2023
+
+SKILLS/TECHNICAL EXPERTISE
+
+Programming
+
+• Python (Proficient)
+• SQL
+• C++/Java/MATLAB
+
+• R/Scala/Bash
+
+Artificial Intelligent
+
+• Machine Learning
+
+4
+
+• Deep Learning
+• Computer Vision
+• Model Optimization
+• Time Series Analysis
+
+Jean Rodrigue Bitsinda Ikuzwe
+
+February 19, 2025
+
+• Big Data Analysis
+
+Data Engineering
+
+• Apache Spark/Hadoop
+• Kafka Streams
+• ETL Pipelines
+• Airflow
+• NoSQL Databases
+
+(Cassandra, MongoDB)
+
+Cloud & DevOps
+• AWS/GCP/Azure
+• Docker/Kubernetes
+• CI/CD Pipelines
+• Git/GitHub
+
+Frameworks
+• PyTorch
+• TensorFlow
+
+• Scikit-learn
+• OpenCV
+
+Data Tools
+
+• Pandas/NumPy
+• Tableau/XML
+• Jupyter/Ms Office
+• ArcGIS
+• LATEX
+
+Methodologies: PCA/t-SNE | A/B Testing | Experimental Design
+Leadership: Technical Strategy | Cross-Functional Teams | Project Management |Communication |Adaptability |Critical
+Thinking |Time Management
+
+5
+
+

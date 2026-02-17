@@ -1,0 +1,122 @@
+jbitsind@gmail.com
+
+SUMMARY
+
+JEAN RODRIGUE BITSINDA IKUZWE
+|
+
+linkedin.com/in/jrodrigue/
+
+Google Scholar
+
+|
+
+| (cid:131) +250 785 391 669
+
+Perception and data-quality practitioner with experience supporting computer vision pipelines through dataset preparation, consistency
+checks, and evaluation. Detail-oriented, process-driven, and comfortable working with SOPs, edge cases, and fast feedback loops with
+engineers and researchers.
+
+EXPERIENCE
+
+Carnegie Mellon University Africa
+
+• Research Associate – Systems & Data Engineering
+
+Kigali, Rwanda
+
+Jul 2025 – Dec 2025
+
+⋆ Built reliable multi-node sensor data pipelines by collecting, synchronizing, and validating telemetry; identified packet loss,
+
+timestamp drift, and corrupted records.
+
+⋆ Improved dataset usability by cleaning, normalizing, and enforcing schema/unit/metadata consistency across heterogeneous
+
+sensor sources.
+
+• Graduate Research Assistant – AI/ML Engineer
+
+Sep 2024 – Dec 2024
+
+⋆ Standardized data collection and dataset curation for a 3D reconstruction workflow, enabling repeatable experiments and
+
+clearer annotation/QA conventions.
+
+⋆ Supported peer-reviewed publications (IDETC-CIE ASME 2024 Best Paper; ASME Journal of Mechanical Design) via ver-
+
+sioned datasets, experiment logs, and evaluation criteria.
+
+⋆ Reduced prototype design cycle time by 40% by integrating automated workflow steps and documenting handoffs for team
+
+reuse.
+
+• Taxi Fare Prediction Application (Cloud Computing Capstone)
+
+Oct 2024 – Dec 2024
+
+⋆ Implemented reproducible preprocessing and validation checks to convert noisy inputs into model-ready features; deployed a
+
+low-latency API (< 200 ms) on App Engine.
+
+• Smart Sorter: Real-Time Waste Classification on Edge (DL Capstone)
+
+Feb 2024 – Apr 2024
+
+⋆ Achieved 94% accuracy by curating a balanced dataset, generating synthetic images (Stable Diffusion), and applying consistent
+
+labeling rules.
+
+⋆ Performed k-fold cross-validation and error analysis to identify ambiguous samples and common failure modes; optimized
+
+deployment with TensorRT.
+
+• Unified Data Aggregation & Visualization Pipeline (DB Capstone)
+
+Sep 2024 – Dec 2024
+
+⋆ Resolved schema mismatches across PostgreSQL/MongoDB; automated ETL (Prefect) and built Dash/Plotly monitoring for
+
+data quality and traceability.
+
+ICTP-East African Institute for Fundamental Research (ICTP-EAIFR)
+
+• Graduate Researcher – Machine Learning
+
+Kigali, Rwanda
+
+Jan 2023 – Jul 2023
+
+⋆ Improved molecular prediction accuracy by 30% by fitting Potential Energy Surfaces (ANN, KNN, Gaussian Processes) and
+
+validating in quantum-dynamics simulations.
+
+EDUCATION
+
+• M.Sc. in Electrical & Computer Engineering (Applied Machine Learning)
+
+Aug 2023 – Dec 2024
+
+Carnegie Mellon University Africa, Kigali, Rwanda
+Coursework: ML for Engineers, Deep Learning, Cloud Computing, Data Inference & Applied ML, Data Structures & Algorithms,
+Applied Computer Vision, Data Analytics, Advanced Database Systems, Applied Stochastic Processes, GIS.
+
+• M.Sc. in Condensed Matter Physics
+
+Dec 2021 – Dec 2023
+
+ICTP–East African Institute for Fundamental Research, Kigali, Rwanda
+Coursework: Mathematical Methods in Physics, Numerical Methods I & II, Advanced Statistical Mechanics, Statistical Physics.
+Sep 2016 – Dec 2020
+
+• B.Sc. in Physics
+
+University of Rwanda – College of Science & Technology, Kigali, Rwanda
+
+SKILLS (RELEVANT)
+
+Perception/Data: dataset curation, labeling SOPs, QA checks, edge cases, error analysis, documentation
+Tools: Python, SQL, Pandas/NumPy, OpenCV, PyTorch, Git/GitHub, PostgreSQL, MongoDB, Prefect
+Cloud/Deploy: GCP (Vertex AI/App Engine), Docker, CI/CD basics
+
+

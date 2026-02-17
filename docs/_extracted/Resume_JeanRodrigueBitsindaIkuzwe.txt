@@ -1,0 +1,116 @@
+s
+
+JEAN RODRIGUE BITSINDA IKUZWE
+jbitsind@alumni.cmu.edu — Google Scholar — linkedin.com/in/jrodrigue/ — +250 785 391 669
+
+EXPERIENCE
+
+UPANZI NETWORK, Kigali, Rwanda
+Research Associate — Data Analysis & Systems Engineering
+
+July 2025 — Dec 2025
+
+• Led the end-to-end analysis and structuring of large-scale GIS datasets for Kigali’s water distribution network, trans-
+
+forming raw utility data into analysis-ready digital-twin assets.
+
+• Designed and validated network topology, DMA segmentation, and asset registries, enabling leakage analysis, system
+
+monitoring, and pilot deployment planning.
+
+• Developed interactive geospatial dashboards and web-based visualizations to support data-driven decision-making for
+
+engineers and field operators.
+
+• Standardized data schemas, quality checks, and export pipelines (QGIS, GeoJSON, CSV) to ensure reproducibility
+
+across hydraulic modeling, analytics, and visualization workflows.
+
+• Presented analytical findings and system demos to WASAC leadership, incorporating operational feedback into phased
+
+deployment and data-collection strategies.
+
+CARNEGIE MELLON UNIVERSITY AFRICA, Kigali, Rwanda
+Graduate Research Assistant
+
+Sep 2024 — Dec 2024
+
+• Led a multidisciplinary student team to develop an AI-driven pipeline for 3D prosthetic socket design using smartphone
+
+video input and FDM 3D printing, improving accessibility for low-resource settings.
+
+• Managed end-to-end model optimization, data preprocessing, experiment design, and pipeline evaluation.
+• Co-authored a journal paper in the Journal of Mechanical Design extended from IDETC-CIE ASME 2024.
+• Refined reconstruction algorithms to boost accuracy and usability for clinical applications.
+
+CARNEGIE MELLON UNIVERSITY AFRICA, Kigali, Rwanda
+Graduate Summer Research Intern
+
+Jun 2024 — Aug 2024
+
+• Optimized computer-vision and AI models for high-fidelity 3D reconstructions of prosthetic limbs.
+• Designed and executed data-collection protocols; integrated 3D-printing workflows for functional prototypes.
+• Co-authored a conference paper accepted at IDETC-CIE ASME 2024.
+
+Education
+
+• MSc, Electrical & Computer Engineering (Applied ML)
+
+Carnegie Mellon University Africa, Kigali
+
+2023–2025
+
+– Key courses: Machine Learning; Deep Learning; Applied Computer Vision; Data Inference & Applied Machine
+Learning; Data Analytics; Cloud Computing; Advanced Database Systems; Applied Stochastic Processes; GIS
+
+• MSc, Condensed Matter Physics
+
+ICTP–East African Institute for Fundamental Research, Kigali
+
+2021–2023
+
+– Key courses: Classical Mechanics; Mathematical Methods for Physics; Advanced Electromagnetism; Quantum
+Mechanics I & II; Statistical Physics; Solid State Physics; Numerical Methods I & II; Many-Body Physics; Advanced
+Statistical Mechanics; Biological Physics
+
+• BSc, Physics
+
+University of Rwanda, College of Science & Technology, Kigali
+
+2016–2020
+
+– Key courses: Classical Mechanics I & II; Electromagnetism; Quantum Mechanics; Thermodynamics; Optics; Waves
+& Vibrations; Electricity & Magnetism; Linear Algebra; Mathematical Physics I & II; Numerical Methods; Fluid
+Mechanics; Environmental Physics; Remote Sensing & GIS
+
+TECHNICAL SKILLS
+
+Programming & Frameworks
+
+Data & Tools
+
+• Python, C/C++, MATLAB,
+
+SQL
+
+• PyTorch, TensorFlow, Scikit-
+
+• NumPy, Pandas, Matplotlib,
+
+MLflow
+
+• Docker, Git/GitHub
+
+learn, OpenCV
+
+Core Concepts
+
+• 3D Computer Vision, Multi-
+
+modal Learning
+
+• Edge AI & TinyML, Neu-
+roevolution, Quantum Simula-
+tion
+
+
