@@ -26,75 +26,54 @@
     }
 }
 @media (max-width: 1200px) {
-    .main-content .portfolio.section, .main-content #portfolio, .main-content .portfolio .container {
+    .main-content .portfolio.section,
+    .main-content #portfolio,
+    .main-content .portfolio .container {
         padding-left: 24px;
+        padding-right: 24px;
+    }
 
-    /* Final override: ensure modal content starts lower so Back/title don't collide */
+    /* Ensure modal content has extra top padding on medium screens */
     .modal .modal-content {
         padding-top: 160px !important;
     }
+}
 
-    @media (max-width: 991px) {
-        .modal .modal-content {
-            padding-top: 64px !important;
-            padding-top: 96px !important;
+@media (max-width: 991px) {
+    .main-content .portfolio.section,
+    .main-content #portfolio,
+    .main-content .portfolio .container {
+        padding-right: 24px;
     }
 
-    /* Small extra top margin for headings inside modal to create breathing room */
+    .modal .modal-content {
+        padding-top: 96px !important;
+    }
+
+    /* Headings inside modal need extra top margin on smaller screens */
     .modal .modal-content h3,
     .modal .modal-content h4 {
         margin-top: 40px !important;
+        margin-left: 56px !important;
     }
 
-    @media (max-width: 991px) {
-        .modal .modal-content h3,
-        .modal .modal-content h4 {
-            margin-top: 24px !important;
-        }
-    }
-
-    /* If Back button is present, shift main headings right to avoid overlap */
     .modal .modal-content .back ~ h3,
     .modal .modal-content .back ~ h4,
     .modal .modal-content .back ~ p {
-        padding-left: 72px !important;
+        padding-left: 48px !important;
     }
 
-    @media (max-width: 991px) {
-        .modal .modal-content .back ~ h3,
-        .modal .modal-content .back ~ h4,
-        .modal .modal-content .back ~ p {
-            padding-left: 48px !important;
-        }
+    .modal .modal-content .back {
+        position: absolute;
+        left: 18px;
+        top: 16px;
+        z-index: 90;
+        background: #fff;
+        border: 1px solid rgba(0,0,0,0.06);
     }
 
-        /* Stronger layout fix: use margin-left on headings and ensure buttons overlay above content */
-        .modal .modal-content .back {
-            position: absolute;
-            left: 18px;
-            top: 16px;
-            z-index: 90;
-            background: #fff;
-            border: 1px solid rgba(0,0,0,0.06);
-        }
-
-        .modal .modal-content .close {
-            z-index: 90;
-        }
-
-        .modal .modal-content h3,
-        .modal .modal-content h4 {
-            margin-left: 84px !important;
-        }
-
-        @media (max-width: 991px) {
-            .modal .modal-content h3,
-            .modal .modal-content h4 {
-                margin-left: 56px !important;
-            }
-        }
-
-        padding-right: 24px;
+    .modal .modal-content .close {
+        z-index: 90;
     }
 }
 @media (max-width: 900px) {
