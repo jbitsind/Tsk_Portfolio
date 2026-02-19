@@ -53,6 +53,16 @@ function setActiveStyle(color) {
         }
     });
 
+    // Update visual active state for color buttons (only the selected one is raised/rotated)
+    try {
+        const colorButtons = document.querySelectorAll('.style-switcher .colors span');
+        colorButtons.forEach((btn) => btn.classList.remove('active'));
+        const activeBtn = document.querySelector(`.style-switcher .colors .${color}`);
+        if (activeBtn) activeBtn.classList.add('active');
+    } catch (err) {
+        // defensive: do nothing if DOM shape is different
+    }
+
     localStorage.setItem("color", color);
 }
 
@@ -90,3 +100,9 @@ window.addEventListener("load", () => {
     const savedColor = localStorage.getItem("color") || "color-1";
     setActiveStyle(savedColor);
 });
+
+// Position the day/night toggle directly under the gear toggler.
+// The day/night button is intentionally fixed via CSS and should not be
+// programmatically repositioned. Previous dynamic positioning caused it to
+// move with the gear toggler; that behavior is removed so the control stays
+// at its initial CSS location.

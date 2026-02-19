@@ -1,93 +1,156 @@
-                    .style-switcher {
-                        position: fixed;
-                        right: 0;
-                        top: 15%;
-                        padding: 15px;
-                        width: 200px;
-                        border: 1px solid var(--bg-black-50);
-                        background-color: var(--bg-black-100);
-                        border-radius: 5px;
-                        z-index: 10000;
-                        transition: all 0.3s ease;
-                        transform: translateX(100%);
-                    }
-                    
-                    .style-switcher.open {
-                        transform: translateX(0);
-                    }
+/* Style Switcher — cleaned and consolidated
+   Ensures the gear toggle (.style-switcher-toggler) is visible when panel is closed
+   and the day/night control (.day-night) matches its size & styling. */
 
-                    /* Fallback: ensure panel can be revealed without JS (hover/focus) */
-                    .style-switcher:hover,
-                    .style-switcher:focus-within {
-                        transform: translateX(0) !important;
-                    }
-                    
-                    .style-switcher .s-icon {
-                        position: absolute;
-                        height: 40px;
-                        width: 40px;
-                        text-align: center;
-                        font-size: 20px;
-                        background: var(--bg-black-100);
-                        color: var(--text-black-900);
-                        right: 100%;
-                        border: 1px solid var(--bg-black-50);
-                        margin-right: 25px;
-                        cursor: pointer;
-                        transition: all 0.3s ease;
-                        border-radius: 50%;
-                    }
-                    
-                    .style-switcher .s-icon i {
-                        line-height: 40px;
-                    }
-                    
-                    .style-switcher .style-switcher-toggler {
-                        top: 0;
-                    }
-                    
-                    .style-switcher .day-night {
-                        top: 55px;
-                    }
-                    
-                    .style-switcher h4 {
-                        margin: 0 0 10px;
-                        color: var(--text-black-700);
-                        font-size: 16px;
-                        font-weight: 600;
-                        text-transform: capitalize;
-                    }
-                    
-                    .style-switcher .colors {
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                    }
-                    
-                    .style-switcher .colors span {
-                        display: inline-block;
-                        width: 30px;
-                        height: 30px;
-                        border-radius: 50%;
-                        border: 1px solid var(--bg-black-50);
-                    }
-                    
-                    .style-switcher .color-1 {
-                        background: #734928;
-                    }
-                    
-                    .style-switcher .color-2 {
-                        background: #fa5b0f;
-                    }
-                    
-                    .style-switcher .color-3 {
-                        background: #37b182;
-                    }
-                    
-                    .style-switcher .color-4 {
-                        background: #1854b4;
-                    }
-                    
-                    .style-switcher .color-5 {
-                        background: #f021b2;
-                    }
+.style-switcher {
+  position: fixed;
+  right: 0;
+  top: 15%;
+  padding: 6px 8px;
+  width: 180px;
+  border: 1px solid var(--bg-black-50);
+  background-color: var(--bg-black-100);
+  border-radius: 5px;
+  z-index: 10000;
+  transition: all 0.3s ease;
+  transform: translateX(100%); /* hidden by default; JS toggles to translateX(0) */
+}
+
+.style-switcher.open {
+  transform: translateX(0);
+}
+
+/* Panel opens only by click — no hover reveal */
+.style-switcher:hover,
+.style-switcher:focus-within {
+  transform: translateX(100%); /* keep hidden unless JS opens it */
+}
+
+/* Shared icon base for gear + day/night so sizes and styles match */
+.s-icon {
+  width: 40px !important;
+  height: 40px !important;
+  font-size: 20px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  background: var(--bg-black-100) !important;
+  color: var(--text-black-900) !important;
+  border: 1px solid var(--bg-black-50) !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+}
+
+.s-icon i { line-height: 1; }
+
+/* Gear control: positioned so it's always visible on the right edge */
+.style-switcher .s-icon {
+  position: fixed !important;
+  right: 18px !important;
+  top: calc(15% + 6px) !important;
+  z-index: 2147483647 !important; /* ensure visibility above other elements */
+}
+
+/* Ensure toggler is positioned even when moved outside the panel */
+.style-switcher-toggler {
+  position: fixed !important;
+  right: 18px !important;
+  top: calc(15% + 6px) !important;
+  z-index: 2147483647 !important;
+  transition: transform 0.35s cubic-bezier(.2,.9,.2,1) !important;
+  will-change: transform;
+}
+
+/* When the panel is opened, move the gear toggler left so it appears attached to the panel */
+.style-switcher.open + .style-switcher-toggler {
+  transform: translateX(-188px) !important; /* panel width + small gap */
+}
+
+/* Keep the dark toggle independent (no transform when panel opens) */
+.style-switcher.open ~ .day-night {
+  transform: none !important;
+}
+
+.style-switcher .style-switcher-toggler { top: 6px; }
+
+/* Day / Night control — sits outside the panel and matches the gear style */
+.day-night {
+  position: fixed !important;
+  /* align horizontally with the gear toggler so both stack vertically */
+  right: 18px !important;
+  top: calc(15% + 56px) !important;
+  z-index: 2147483647 !important;
+}
+
+/* Dark-mode visual for the toggle */
+body.dark .day-night {
+  background: var(--bg-black-900);
+  color: var(--bg-black-100);
+  border-color: rgba(255,255,255,0.08);
+}
+
+body.dark .day-night i { color: var(--bg-black-100); }
+
+/* Ensure the moon/sun icon contrasts with the background
+   - dark icon on light theme
+   - light icon on dark theme */
+.day-night i {
+  color: var(--text-black-900) !important; /* dark icon on light theme */
+  transition: color 180ms ease !important;
+}
+
+/* Force whitish icon in dark mode for good contrast */
+body.dark .day-night i {
+  color: #ffffff !important;
+  opacity: 0.95 !important;
+}
+
+/* Colors row inside panel */
+.style-switcher .colors {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 4px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.style-switcher .colors span {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid var(--bg-black-50);
+  cursor: pointer;
+  transition: transform 400ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms ease, filter 220ms ease;
+  position: relative;
+  box-shadow: none;
+  transform-origin: center center;
+}
+
+/* Neutralize hover visuals */
+.style-switcher .colors span:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+/* Active color: only selected swatch pops */
+.style-switcher .colors span.active {
+  transform: rotate(360deg) scale(1.18);
+  z-index: 10002;
+  box-shadow: 0 10px 24px rgba(10,10,20,0.22);
+  filter: brightness(1.05);
+}
+
+.style-switcher .color-1 { background: #734928; }
+.style-switcher .color-2 { background: #fa5b0f; }
+.style-switcher .color-3 { background: #37b182; }
+.style-switcher .color-4 { background: #1854b4; }
+.style-switcher .color-5 { background: #f021b2; }
+
+/* keep icons above the colors */
+.style-switcher .s-icon { z-index: 10003; }

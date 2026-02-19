@@ -1365,15 +1365,15 @@
                         <!-- ========== Contact info item Start ========== -->
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-phone"></i></div>
-                            <h4>Call Us On</h4>
+                            <h4>Call Me On</h4>
                             <p>+250 785391669</p>
                         </div>
                         <!-- ========== Contact info item End ========== -->
                         <!-- ========== Contact info item Start ========== -->
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
-                            <h4>Office</h4>
-                            <p>Kigali, Rwanda</p>
+                            <h4>Location</h4>
+                            <p>Rwanda, Kigali and remotely</p>
                         </div>
                         <!-- ========== Contact info item End ========== -->
                         <!-- ========== Contact info item Start ========== -->
@@ -1436,13 +1436,6 @@
     <!-- =========== Main Container End ============= -->
     <!-- =========== Style Switcher Start ============= -->
     <div class="style-switcher">
-        <div class="style-switcher-toggler s-icon">
-            <i class="fas fa-cog fa-spin"></i>
-        </div>
-        <div class="day-night s-icon">
-            <i class="fas"></i>
-        </div>
-        <h4>Theme Colors</h4>
         <div class="colors">
             <span class="color-1" onclick="setActiveStyle('color-1')"></span>
             <span class="color-2" onclick="setActiveStyle('color-2')"></span>
@@ -1450,6 +1443,14 @@
             <span class="color-4" onclick="setActiveStyle('color-4')"></span>
             <span class="color-5" onclick="setActiveStyle('color-5')"></span>
         </div>
+    </div>
+    <!-- gear toggler moved outside the transformed panel so fixed positioning behaves correctly -->
+    <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <!-- move day/night outside the panel so it remains fixed when panel toggles -->
+    <div class="day-night s-icon">
+        <i class="fas fa-moon"></i>
     </div>
     <!-- =========== Style Switcher End ============= -->
     <!-- =========== Footer Start ============= -->
@@ -1500,6 +1501,7 @@
     <!-- =========== JS Files ============= -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/style-switcher.js"></script>
     <script src="js/skills-accordion.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <!-- <script src="js/email.js"></script> -->

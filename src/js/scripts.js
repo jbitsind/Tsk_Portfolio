@@ -63,6 +63,56 @@ document.addEventListener("DOMContentLoaded", () => {
         const btn = this.querySelector('button[type="submit"]');
         btn.disabled = true;
 
+        // Quick size estimate to avoid EmailJS 'Variables size limit' (50KB) errors
+        function estimateFormSize(form) {
+            const fd = new FormData(form);
+            let size = 0;
+            for (const pair of fd.entries()) {
+                const v = pair[1];
+                if (v instanceof File) {
+                    size += v.size;
+                } else {
+                    // approximate bytes for string
+                    size += new TextEncoder().encode(String(v)).length;
+                }
+            }
+            return size;
+        }
+
+        // If form payload is near or over 50KB, skip EmailJS and try local server fallback
+        const estimated = estimateFormSize(this);
+        const SIZE_LIMIT = 50 * 1024; // 50KB
+        if (estimated > SIZE_LIMIT) {
+            try {
+                const res = await fetch('http://127.0.0.1:3001/send', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        name: this.querySelector('[name="user_name"]').value,
+                        email: this.querySelector('[name="user_email"]').value,
+                        subject: this.querySelector('[name="subject"]').value,
+                        message: this.querySelector('[name="message"]').value,
+                    })
+                });
+
+                if (res.ok) {
+                    alert('Message sent successfully via server fallback!');
+                    this.reset();
+                    return;
+                } else {
+                    const text = await res.text().catch(()=>res.statusText);
+                    alert('Failed to send via server fallback: ' + text);
+                    return;
+                }
+            } catch (errFallback) {
+                console.error('Fallback send error:', errFallback);
+                alert('Message is too large for EmailJS and server fallback failed. Please reduce message size.');
+                return;
+            } finally {
+                btn.disabled = false;
+            }
+        }
+
         try {
             // 5. Send the form via EmailJS (replace service/template IDs)
             await emailjs.sendForm(
@@ -74,7 +124,38 @@ document.addEventListener("DOMContentLoaded", () => {
             this.reset(); // clear the form
         } catch (err) {
             console.error("EmailJS error:", err);
-            alert("Failed to send message. Please try again later."); // error feedback
+            var errText = (err && (err.text || err.message)) ? (err.text || err.message) : JSON.stringify(err);
+            // If EmailJS reports a variables size limit or the network returned 413, try server fallback
+            if (/Variables size limit|413|Content Too Large/i.test(errText)) {
+                try {
+                    const res = await fetch('http://127.0.0.1:3001/send', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            name: this.querySelector('[name="user_name"]').value,
+                            email: this.querySelector('[name="user_email"]').value,
+                            subject: this.querySelector('[name="subject"]').value,
+                            message: this.querySelector('[name="message"]').value,
+                        })
+                    });
+
+                    if (res.ok) {
+                        alert('Message sent successfully via server fallback!');
+                        this.reset();
+                        return;
+                    } else {
+                        const text = await res.text().catch(()=>res.statusText);
+                        alert('Failed to send via server fallback: ' + text);
+                        return;
+                    }
+                } catch (errFallback) {
+                    console.error('Fallback send error:', errFallback);
+                    alert('Failed to send message. ' + errText + ' Also failed fallback.');
+                    return;
+                }
+            }
+
+            alert("Failed to send message. " + errText + " Please try again later."); // error feedback with details for debugging
         } finally {
             btn.disabled = false; // re-enable button
         }

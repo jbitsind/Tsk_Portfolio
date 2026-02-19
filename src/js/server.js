@@ -38,7 +38,8 @@ app.post("/send", async(req, res) => {
     }
 });
 
-const PORT = process.env.PORT || 3000;
+// Use 3001 by default to avoid conflicting with dev preview servers on 3000
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
